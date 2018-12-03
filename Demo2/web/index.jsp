@@ -13,6 +13,7 @@
     </head>
     <body>
         <h1>Hello World!</h1>
+        <%-- This is jsp comment--%>
         <!-- Expressions-->
         <%=(2 + 2)%>
         <p>The current time <%=new java.util.Date()%> Precisely</p>
