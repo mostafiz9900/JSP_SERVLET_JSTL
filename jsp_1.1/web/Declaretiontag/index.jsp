@@ -1,6 +1,6 @@
 <%-- 
     Document   : index
-    Created on : Dec 7, 2018, 11:55:25 PM
+    Created on : Dec 8, 2018, 8:24:04 PM
     Author     : Mostafizur
 --%>
 
@@ -13,8 +13,13 @@
     </head>
     <body>
         <h1>Hello World!</h1>
-        <%= "Name" + request.getParameter("fname")%>
-        <%= "Email" + request.getParameter("email")%>
-        <%= "Pass" + request.getParameter("pass")%>
+        <form action="action.jsp" method="post">
+            Name  : <input type="text" name="fname">
+            Pass  : <input type="password" name="pass">
+            <input type="button" value="Send">
+
+
+
+        </form>
     </body>
 </html>
