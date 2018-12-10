@@ -14,8 +14,10 @@
     <body>
         <h1>Hello World!</h1>
         <h2>this is index page</h2>  
-
+        <jsp:include page="header.jsp" />
         <jsp:include page="includedPage.jsp" />  
+        <jsp:include page="footer.jsp" />  
+          
 
         <h2>end section of index page</h2>  
     </body>
