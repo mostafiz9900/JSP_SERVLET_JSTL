@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>dateBean_getProperty.jsp</title>
+        <link rel="stylesheet" href="../STYLE/style.css" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h3>File name is : dateBean_getProperty.jsp</h3>
+        <pre>
+&lt;%-- 
+    Document   : dateBean_getProperty
+    Created on : Dec 19, 2017, 7:46:39 PM
+    Author     : Rasel-2017
+--%&gt;
+
+&lt;%@page contentType="text/html" pageEncoding="UTF-8"%&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
+        &lt;title&gt;Professional JSP 2.1&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body style="font-family: verdana; font-size: 10pt"&gt;
+        &lt;jsp:useBean id="date" class="com.shamim.DateFormatBean"/&gt;
+        &lt;h2&gt;Today's Date is &lt;jsp:getProperty name="date" property="date"/&gt;&lt;/h2&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+        <h3>File name is : DateFormatBean.java</h3>
+        <pre>
+package com.shamim;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+/**
+ *
+ * @author Shamim
+ */
+public class DateFormatBean {
+
+    private DateFormat dateFormat;
+    private Date date;
+
+    public DateFormatBean() {
+        dateFormat = DateFormat.getDateInstance();
+        date = new Date();
+    }
+
+    public String getDate() {
+        return dateFormat.format(date);
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public void setFormat(String format) {
+        this.dateFormat = new SimpleDateFormat(format);
+    }
+}
+
+        </pre>
+    </body>
+</html>

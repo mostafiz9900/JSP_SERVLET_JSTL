@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>dateScriptlet.jsp</title>
+        <link rel="stylesheet" href="../STYLE/style.css" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h3>File name is : dateScriptlet.jsp</h3>
+        <pre>
+&lt;%-- 
+    Document   : dateScriptlet
+    Created on : Dec 19, 2017, 6:57:55 PM
+    Author     : Shamim
+--%&gt;
+
+&lt;%@page import="java.util.Date"%&gt;
+&lt;%@page import="java.text.DateFormat"%&gt;
+&lt;%@page contentType="text/html" pageEncoding="UTF-8"%&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
+        &lt;title&gt;Professional JSP 2.1&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body style="font-family: verdana; font-size: 10pt;"&gt;
+        &lt;%
+            DateFormat df = DateFormat.getDateInstance();
+            Date today = new Date();
+        %&gt;       
+        &lt;h2&gt;Today's Date is &lt;%= df.format(today)%&gt;&lt;/h2&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+    </body>
+</html>

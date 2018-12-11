@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book>
+        <title>Professional JSP</title>
+        <author>Brown et. al</author>
+        <isbn>1-595-5-845</isbn>
+        <published>September 2005</published>
+        <publisher>Apress</publisher>
+        <url>www.apress.com</url>
+    </book>
+    <book>
+        <title>Macbeth</title>
+        <author>William Shakespeare</author>
+        <isbn>5-8548-965-8</isbn>
+        <published>Long time ago</published>
+        <publisher>Blogs</publisher>
+        <url>www.william.com</url>
+    </book>
+    <book>
+        <title>Java</title>
+        <author>Herbert Shield</author>
+        <isbn>58-847-958-85</isbn>
+        <published>January 2000</published>
+        <publisher>Schams</publisher>
+        <url>www.java.com</url>
+    </book>
+</books>
