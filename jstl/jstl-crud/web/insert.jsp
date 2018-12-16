@@ -34,10 +34,12 @@
             <c:out value="${param.errMsg}" />
             <a href="index.jsp">Go Back</a>
         </c:if></font>
-        <font color="green"><c:if test="${not empty param.susMsg}">
+        <font color="green">
+        <c:if test="${not empty param.susMsg}">
             <c:out value="${param.susMsg}" />
             <a href="index.jsp">Go Back</a>
-        </c:if></font>
+        </c:if>
+            </font>
  
     </body>
 </html>
